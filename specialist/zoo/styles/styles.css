@@ -1,0 +1,44 @@
+/*Общий сброс*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 0;
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*Верхний колонтитул*/
+
+/*Навигация*/
+nav {
+	background-color: transparent;
+}
+
+/*Главная секция*/
+
+/*Нижний колонтитул*/
+
+/*Инструменты*/
+.small-text {
+	font-family: sans-serif;
+	font-size: 12px;
+}
+.mid-text {
+	font-family: sans-serif;
+	font-size: 18px;
+}
+.big-text {
+	font-family: sans-serif;
+	font-size: 28px;
+}
+
+a {
+	font-size: 12px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #FADC8C;
+}

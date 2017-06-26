@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Свойство display-table</title>
+	<style>
+		header {
+			background: yellow;
+		}
+
+		.wrapper {
+			margin: 0 auto;
+			width: 960px;
+		}
+
+		.container {
+			display: table;
+			background: #dedede;
+		}
+
+		.container-row {
+			display: table-row;	
+		}
+
+		.left-panel {
+			display: table-cell;
+			border: 1px solid black;
+			width: 200px;
+			height: 75px;
+		}
+
+		main {
+			display: table-cell;
+			border: 1px solid black;
+			width: 860px;
+			background: white;
+		}
+
+		footer {
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header>Верхний колонтитул</header>
+
+		<div class="container">
+			<div class="container-row">
+				<aside class="left-panel">Боковое меню</aside>
+				<main>Основной контент страницы</main>
+			</div>
+			<div class="container-row">
+				<aside class="left-panel">Еще одно боковое меню</aside>
+				<main>Еще один основной контент страницы</main>
+			</div>
+		</div>
+
+		<footer>Нижний колонтитул</footer>
+	</div>
+</body>
+</html>

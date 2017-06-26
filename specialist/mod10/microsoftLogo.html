@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Microsoft Logo</title>
+	<style>
+		.div1, .div2 {
+			width: 120px;
+			height: 120px;
+		}
+		.div1 {
+			background-color: red;
+		}
+		.div2 {
+			margin-top: 10px;
+			background-color: blue;
+		}
+		.div1::after {
+			content: "";
+			display: block;
+			width: 120px;
+			height: 120px;
+			position: relative;
+			left: 130px;
+			background-color: orange;
+		}
+		.div2::after {
+			content: "";
+			display: block;
+			width: 120px;
+			height: 120px;
+			position: relative;
+			left: 130px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="div2"></div>
+</body>
+</html>

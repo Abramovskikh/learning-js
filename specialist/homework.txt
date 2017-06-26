@@ -1,0 +1,25 @@
+zoo/
+	index.html
+	images/
+		birds/
+		reptiles/
+		mammals/
+	styles/
+		styles.css
+	animals/
+		birds/
+			parrot.html
+			pinguin.html
+		reptiles/
+			snake.html
+			turtle.html
+		mammals/
+			cat.html
+			dog.html
+	about/
+		about-zoo.html
+
+1) Для каждого зверя разместить по две картинки на странице
+2) На всех страницах фон одинаковый и отличен от белого
+3) Картинки помещать в соответствующую папку
+4) Ссылки должны быть с каждой страницы на каждую

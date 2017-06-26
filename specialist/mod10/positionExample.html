@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Пример свойства position</title>
+	<style>
+		#container {
+			display: block;
+			position: relative;
+			width: 960px;
+			height: 460px;
+			border: 1px solid black;
+			margin: 10px auto;
+		}
+		#div1, #div2, #div3, #div4, #div5, #div6 {
+			display: block;
+			width: 100px;
+			height: 100px;
+		}
+		#div1 {
+			position: relative;
+			background-color: blue;
+		}
+		#div2 {
+			position: relative;
+			background-color: red;
+		}
+		#div3 {
+			position: relative;
+			background-color: green;
+		}
+		#div4 {
+			position: absolute;
+			background-color: yellow;
+			top:10px;
+		}
+		#div5 {
+			position: absolute;
+			background-color: lime;
+			top:120px;
+			left:35px;
+		}
+		#div6 {
+			position: absolute;
+			background-color: gray;
+			bottom:50px;
+			right:230px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<div id="div3"></div>
+	</div>
+	<div id="container">
+		<div id="div4">top: 10px;</div>
+		<div id="div5">top: 120px; left: 35px;</div>
+		<div id="div6">bottom: 50px; right: 230px;</div>
+	</div>
+</body>
+</html>

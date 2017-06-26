@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Фиксированная верстка</title>
+	<style>
+		.header {
+			background: yellow;
+		}
+		.menu {
+			float: left;
+			width: 33%;
+			height: 200pt;
+			background: pink;
+		}
+		.main {
+			float: right;
+			width: 67%;
+			background: #fffddf;
+			height: 220pt;
+		}
+		.clear {
+			clear: both;
+		}
+		.footer {
+			background: #dfdfdf;
+			height: 20pt;
+		}
+		.wrapper, .header, .footer {
+			width: 960px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<span>Верхний колонтитул</span>
+	</div>
+	<div class="wrapper">
+		<div class="menu">
+			<span>Блок меню</span>
+		</div>
+		<div class="main">
+			<span>Основной блок</span>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="footer">
+		<span>Нижний колонтитул</span>
+	</div>
+</body>
+</html>

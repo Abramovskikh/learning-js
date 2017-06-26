@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Визитка для вэба</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 0;
+		}
+
+		html body {
+			font-family: sans-serif;
+		}
+
+		.wrapper {
+			position: relative;
+			margin: 10% auto;
+			width: 640px;
+			height: 360px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+		}
+
+		/* Left section */
+		/*======================================================*/
+		#left {
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			width: 60%;
+			height: 360px;
+			background-image: url("http://ak6.picdn.net/shutterstock/videos/1484233/thumb/1.jpg");
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			text-align: left;
+		}
+
+		#cityName, #countryName {
+			position: absolute;
+			top: 20px;
+			left: 30px;
+			font-family: monospace;
+			font-size: 24px;
+			color: white;
+			text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+		}
+
+		#countryName {
+			top: 50px;
+			font-size: 12px;
+		}
+
+		#button {
+			position: absolute;
+			bottom: 20px;
+			left: 30px;
+			width: 150px;
+			height: 30px;
+			background-color: #369;
+			border-radius: 4px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+			text-align: center;
+			line-height: 30px;
+			font-size: 12px;
+			color: white;
+			user-select: none;
+			cursor: pointer;
+		}
+		#button:active {
+			background-color: #258;
+			color: lightgray;
+		}
+
+		/* Right section */
+		/*======================================================*/
+		#right {
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			width: 40%;
+			height: 360px;
+			background-color: white;
+		}
+		
+		#upSection, #friendsSection {
+			/*background-color: #fda;*/
+			position: relative;
+			width: 200px;
+			height: 60px;
+			margin-top: 20px;
+			margin-left: 30px;
+		}
+
+		#newsSection {
+			/*background-color: #f23;*/
+			position: relative;
+			width: 170px;
+			height: 160px;
+			margin-top: 20px;
+			margin-left: 30px;
+		}
+
+		.header1 {
+			font-size: 24px;
+			text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+		}
+
+		.paragraph {
+			font-size: 12px;
+			text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+		}
+
+		#newsSection p {
+			position: relative;
+			top: 50px;
+			line-height: 17px;
+		}
+
+		img {
+			position: relative;
+			left: -50%;
+			width: 60px;
+		}
+		
+		.pic {
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			top: 10px;
+			width: 30px;
+			height: 30px;
+			overflow: hidden;
+			border-radius: 50%;
+			margin-right: 10px;
+		}
+		
+		#friendsCounter {
+			position: relative;
+			top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+
+		<section id="left">
+			<span id="cityName">Montreal, QC</span>
+			<span id="countryName">Canada</span>
+			<div id="button">Join the group</div>
+		</section>
+
+		<section id="right">
+			<div id="upSection">
+				<span class="header1">Dribbble Meetup</span>
+				<span class="paragraph">Laika - November 26th</span>
+			</div>
+			<article id="newsSection">
+				<p class="paragraph">
+					We are having a new meetup.
+					To help us spread the world,
+					you can post a rebound of the
+					original shot, tweet about it.
+				</p>
+			</article>
+			<figure id="friendsSection">
+				<span class="paragraph">18 Friends coming</span>
+				<div></div>
+				<div class="pic"><img src="https://www.drhodgkinson.com.au/wp-content/uploads/2015/12/face-head-2-388x270.png" alt="pic ava"></div>
+				<div class="pic"><img src="http://cdn.girlhdwalls.com/wallpapers/barbara-palvin/barbara-palvin-6485-550x310.jpg" alt="pic ava"></div>
+				<div class="pic"><img src="http://1.media.collegehumor.cvcdn.com/14/45/7d51a082762115b56229fc6b741c1438.jpg" alt="pic ava"></div>
+				<span id="friendsCounter" class="paragraph">+15 more</span>
+			</figure>
+		</section>
+
+	</div>
+</body>
+</html>
