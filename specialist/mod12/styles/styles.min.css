@@ -1,0 +1,9 @@
+*{margin:0;padding:0;border:0;font-size:0}
+html body{font-style:sans-serif}
+#wrapper{position:absolute;width:600px;height:300px;top:50%;left:50%;margin-top:-150px;margin-left:-300px;box-shadow:0 0 10px rgba(0,0,0,.8)}
+#left,#right{position:relative;display:inline-block;vertical-align:top;height:300px}
+#left{width:240px;background-image:url(http://www.moe-online.ru/image/edit/418b44c80460593830694c538f114eb5.jpg);background-size:cover;background-position:center center;background-repeat:no-repeat}
+#right{width:360px;background-color:green}
+.city-text,.country-text{position:absolute;left:20px;font-family:monospace;color:#fff}
+.city-text{font-size:16px;top:5px}
+.country-text{font-size:10px;top:22px}

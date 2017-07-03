@@ -1,3 +1,62 @@
 * {
 	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 0;
+}
+
+$min-width: 600px;
+$min-height: 300px;
+$half-transparent: rgba(0, 0, 0, 0.8);
+
+html body {
+	font-style: sans-serif;
+}
+
+#wrapper {
+	position: absolute;
+	width: $min-width;
+	height: $min-height;
+	top: 50%;
+	left: 50%;
+	margin-top: -($min-height / 2);
+	margin-left: -($min-width / 2);
+	box-shadow: 0 0 10px $half-transparent;
+}
+
+#left, #right {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: $min-height;
+}
+
+#left {
+	width: $min-width * 0.4;
+	background-image: url("http://www.moe-online.ru/image/edit/418b44c80460593830694c538f114eb5.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#right {
+	width: $min-width * 0.6;
+	background-color: green;
+}
+
+.city-text, .country-text {
+	position: absolute;
+	left: 20px;
+	font-family: monospace;
+	color: white;
+}
+
+.city-text {
+	font-size: 16px;
+	top: 5px;
+}
+
+.country-text {
+	font-size: 10px;
+	top: 22px;
 }
