@@ -1,0 +1,26 @@
+@mixin button($color: gray, $width: 200px, $height: 80px) {
+    display: inline-block;
+    margin: 4px;
+    width: $width;
+    height: $height;
+    background-color: $color;
+    text-align: center;
+    line-height: $height;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: $height * 0.4;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #bcbcbc;
+    box-shadow: 0 0 5px #eee;
+    color: black;
+    cursor: cell;
+    overflow: hidden;
+
+    &:hover {
+        background-color: darken($color, 10%);
+        text-decoration: underline;
+        border-color: #033;
+        color: #033;
+    }
+}

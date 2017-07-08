@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 0; }
+
+.simple-button {
+  display: inline-block;
+  margin: 4px;
+  width: 200px;
+  height: 80px;
+  background-color: green;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #bcbcbc;
+  box-shadow: 0 0 5px #eee;
+  color: black;
+  cursor: cell;
+  overflow: hidden; }
+  .simple-button:hover {
+    background-color: #004d00;
+    text-decoration: underline;
+    border-color: #033;
+    color: #033; }
+
+.attention-button {
+  display: inline-block;
+  margin: 4px;
+  width: 220px;
+  height: 80px;
+  background-color: yellow;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #bcbcbc;
+  box-shadow: 0 0 5px #eee;
+  color: black;
+  cursor: cell;
+  overflow: hidden; }
+  .attention-button:hover {
+    background-color: #cccc00;
+    text-decoration: underline;
+    border-color: #033;
+    color: #033; }
+
+.danger-button {
+  display: inline-block;
+  margin: 4px;
+  width: 150px;
+  height: 100px;
+  background-color: red;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #bcbcbc;
+  box-shadow: 0 0 5px #eee;
+  color: black;
+  cursor: cell;
+  overflow: hidden; }
+  .danger-button:hover {
+    background-color: #cc0000;
+    text-decoration: underline;
+    border-color: #033;
+    color: #033; }
+
+.trade-button {
+  display: inline-block;
+  margin: 4px;
+  width: 200px;
+  height: 80px;
+  background-color: orange;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #bcbcbc;
+  box-shadow: 0 0 5px #eee;
+  color: black;
+  cursor: cell;
+  overflow: hidden; }
+  .trade-button:hover {
+    background-color: #cc8400;
+    text-decoration: underline;
+    border-color: #033;
+    color: #033; }
+
+.column-common, .column-one, .column-big, .column-middle, .column-small {
+  display: inline-block;
+  vertical-align: top;
+  height: 200px;
+  outline: 1px solid black; }
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto; }
+
+.column-one {
+  width: 960px; }
+
+.column-big {
+  width: 480px; }
+
+.column-middle {
+  width: 320px; }
+
+.column-small {
+  width: 240px; }

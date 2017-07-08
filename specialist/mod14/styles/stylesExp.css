@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0; }
+
+html body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.first {
+  height: 200px;
+  background-color: yellow; }
+
+.second {
+  position: relative;
+  height: 200px;
+  background-color: brown;
+  text-align: center;
+  line-height: 200px; }
+
+.second-inner {
+  position: relative;
+  width: 50%;
+  height: 200px;
+  background-color: lightgray; }
+
+.second-super-inner {
+  position: relative;
+  width: 50%;
+  height: 200px;
+  background-color: red; }
+
+.last {
+  height: 200px;
+  background-color: #03d; }
+
+span {
+  font-size: 24px; }
+
+#s-in {
+  position: absolute;
+  top: 0;
+  right: 0; }

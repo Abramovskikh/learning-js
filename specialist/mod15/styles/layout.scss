@@ -1,0 +1,33 @@
+$wrapper-size: 960px;
+
+.column-common {
+    display: inline-block;
+    vertical-align: top;
+    height: 200px;
+    outline: 1px solid black;
+}
+
+.wrapper {
+    width: $wrapper-size;
+    margin: 0 auto;
+}
+
+.column-one {
+    @extend .column-common;
+    width: $wrapper-size;
+}
+
+.column-big {
+    @extend .column-common;
+    width: $wrapper-size / 2;
+}
+
+.column-middle {
+    @extend .column-common;
+    width: $wrapper-size / 3;
+}
+
+.column-small {
+    @extend .column-common;
+    width: $wrapper-size / 4;
+}
