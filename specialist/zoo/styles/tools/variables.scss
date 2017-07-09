@@ -1,0 +1,24 @@
+
+$width: 640px;
+$height: 360px;
+
+$hHeight: 100px;
+$mHeight: $height - $hHeight;
+
+$logo: url("../images/logo.svg");
+
+$small-text: 8px;
+$middle-text: 12px;
+$big-text: 18px;
+
+@mixin std() {
+    position: relative;
+    width: $width;
+}
+
+@mixin anchor() {
+    font-weight: normal;
+    font-size: $middle-text;
+    text-decoration: none;
+    color: black;
+}

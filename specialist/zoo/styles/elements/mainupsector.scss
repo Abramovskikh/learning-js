@@ -1,0 +1,7 @@
+$hm: $mHeight * 0.9;
+
+#mainupsector {
+    @include std();
+    height: $hm;
+    background-color: transparent;
+}

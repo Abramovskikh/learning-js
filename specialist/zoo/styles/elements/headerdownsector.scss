@@ -1,0 +1,16 @@
+$h: $hHeight * 0.2;
+
+#headerdownsector {
+    @include std();
+    height: $h;
+}
+
+#headerdownsector nav {
+    line-height: $h;
+}
+
+.anchor {
+    @include anchor();
+    margin-right: $width / 13;
+    margin-left: $width / 13;
+}

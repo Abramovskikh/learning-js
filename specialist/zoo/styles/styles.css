@@ -1,44 +1,109 @@
-/*Общий сброс*/
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 0;
-}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 0; }
 
-#container {
-	width: 960px;
-	margin: 0 auto;
-}
+ul {
+  list-style: none; }
 
-/*Верхний колонтитул*/
+html body {
+  font-family: "Courier New", Courier, monospace; }
 
-/*Навигация*/
-nav {
-	background-color: transparent;
-}
+#wrapper {
+  position: absolute;
+  width: 640px;
+  height: 360px;
+  top: 50%;
+  left: 50%;
+  margin-top: -180px;
+  margin-left: -320px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  overflow: hidden; }
 
-/*Главная секция*/
+header {
+  position: relative;
+  width: 640px;
+  height: 99px;
+  border-bottom: 1px solid lightgray;
+  background-image: linear-gradient(to top, #fee, white); }
 
-/*Нижний колонтитул*/
+main {
+  position: relative;
+  width: 640px;
+  height: 260px;
+  background-image: url("../images/mineBG.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #fee; }
 
-/*Инструменты*/
-.small-text {
-	font-family: sans-serif;
-	font-size: 12px;
-}
-.mid-text {
-	font-family: sans-serif;
-	font-size: 18px;
-}
-.big-text {
-	font-family: sans-serif;
-	font-size: 28px;
-}
+#headerupsector {
+  position: relative;
+  width: 640px;
+  height: 80px; }
 
-a {
-	font-size: 12px;
-	cursor: pointer;
-	text-decoration: none;
-	color: #FADC8C;
-}
+#panelupheadersector, #logo, #leftupheadertext, #rightupheadertext {
+  display: inline-block;
+  vertical-align: top;
+  height: 64px;
+  margin: 8px 5px 8px 5px;
+  background-color: red; }
+
+#spaninheader, #leftupheadertext span, #rightupheadertext span {
+  font-weight: bolder;
+  font-size: 12px;
+  line-height: 23.2px; }
+
+#logo {
+  width: 64px;
+  background-color: transparent;
+  background-image: url("../images/logo.svg"); }
+
+#leftupheadertext {
+  width: 273px;
+  text-align: left;
+  background-color: transparent; }
+
+#rightupheadertext {
+  width: 273px;
+  background-color: transparent;
+  text-align: right; }
+
+#headerdownsector {
+  position: relative;
+  width: 640px;
+  height: 20px; }
+
+#headerdownsector nav {
+  line-height: 20px; }
+
+.anchor {
+  font-weight: normal;
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+  margin-right: 49.23077px;
+  margin-left: 49.23077px; }
+
+#mainupsector {
+  position: relative;
+  width: 640px;
+  height: 234px;
+  background-color: transparent; }
+
+#maindownsector {
+  position: relative;
+  width: 640px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: transparent;
+  border-top: 1px solid lightgray; }
+
+#maindownsector span {
+  color: white;
+  font-size: 12px;
+  text-shadow: 0 0 1px black; }

@@ -1,0 +1,49 @@
+$h: $hHeight * 0.8;
+
+#headerupsector {
+    @include std();
+    height: $h;
+}
+
+#panelupheadersector {
+    display: inline-block;
+    vertical-align: top;
+    height: $h * 0.8;
+    margin: ($h * 0.1) 5px ($h * 0.1) 5px;
+    background-color: red;
+}
+
+#spaninheader {
+    font-weight: bolder;
+    font-size: $middle-text;
+    line-height: $h * 0.29;
+}
+
+#logo {
+    @extend #panelupheadersector; 
+    width: $h * 0.8;
+    background-color: transparent;
+    background-image: $logo;
+}
+
+#leftupheadertext {
+    @extend #panelupheadersector;
+    width: (($width - ($h * 0.8)) - 30) / 2;
+    text-align: left;
+    background-color: transparent;
+}
+
+#leftupheadertext span {
+    @extend #spaninheader;    
+}
+
+#rightupheadertext {
+    @extend #panelupheadersector;
+    width: (($width - ($h * 0.8)) - 30) / 2;
+    background-color: transparent;
+    text-align: right;
+}
+
+#rightupheadertext span {
+    @extend #spaninheader;
+}

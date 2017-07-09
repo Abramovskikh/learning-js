@@ -1,0 +1,16 @@
+$hm: $mHeight * 0.1;
+
+#maindownsector {
+    @include std();
+    height: $hm - 1;
+    line-height: $hm - 1;
+    text-align: center;
+    background-color: transparent;
+    border-top: 1px solid lightgray
+}
+
+#maindownsector span {
+    color: white;
+    font-size: $middle-text;
+    text-shadow: 0 0 1px black;
+}

@@ -1,0 +1,36 @@
+
+html body {
+    font-family: "Courier New", Courier, monospace;
+}
+
+#wrapper {
+    position: absolute;
+    width: $width;
+    height: $height;
+    top: 50%;
+    left: 50%;
+    margin-top: -($height / 2);
+    margin-left: -($width / 2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    overflow: hidden;
+} 
+
+header {
+    position: relative;
+    width: $width;
+    height: $hHeight - 1;
+    border-bottom: 1px solid lightgray;
+    background-image: linear-gradient(to top, #fee, white);
+}
+
+main {
+    position: relative;
+    width: $width;
+    height: $mHeight;
+    background-image: url("../images/mineBG.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #fee;
+}
