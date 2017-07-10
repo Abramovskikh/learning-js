@@ -1,7 +1,79 @@
 $hm: $mHeight * 0.9;
+$wrapperWidth: $width - 20;
 
 #mainupsector {
     @include std();
     height: $hm;
     background-color: transparent;
+}
+
+#wrapperMain {
+    position: absolute;
+    width: $wrapperWidth;
+    height: $hm - 20;
+    margin: 10px 10px;
+    box-shadow: 0 0 5px lightgray;
+    border-radius: 10px;
+    background-color: rgba(233, 233, 233, 0.2);
+
+    h1 {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 24px;
+        color: black;
+    }
+
+    p {
+        padding: 10px;
+        font-size: $middle-text;
+        text-indent: 15px;
+    }
+}
+
+#arrayBlock {
+    position: relative;
+    background-color: transparent;
+    margin: 0 10px;
+    width: $wrapperWidth - 20;
+    height: $cubeSize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+
+    .pic {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
+        margin-top: 6px;
+        width: $cubeSize - 15 - 2;
+        height: $cubeSize - 15 - 2;
+        border: 2px solid gray;
+        box-shadow: 0 0 2px black;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+}
+
+.parrot-min {
+    @include stdIMG("../images/birds/animals_parrot_min.png");
+}
+
+.pinguin-min {
+    @include stdIMG("../images/birds/animals_pinguin_min.png");
+}
+
+.snake-min {
+    @include stdIMG("../images/reptiles/animals_snake_min.png");
+}
+
+.turtle-min {
+    @include stdIMG("../images/reptiles/animals_turtle_min.png");
+}
+
+.dog-min {
+    @include stdIMG("../images/mammals/animals_dog_min.png");
+}
+
+.cat-min {
+    @include stdIMG("../images/mammals/animals_cat_min.png");
 }

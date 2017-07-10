@@ -1,6 +1,7 @@
 
 $width: 640px;
 $height: 360px;
+$cubeSize: 100px;
 
 $hHeight: 100px;
 $mHeight: $height - $hHeight;
@@ -21,4 +22,11 @@ $big-text: 18px;
     font-size: $middle-text;
     text-decoration: none;
     color: black;
+}
+
+@mixin stdIMG($img) {
+    background-image: url($img);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }

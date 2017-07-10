@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+}
+
+.box {
+    height: 100px;
+    background-color: red;
+}
+
+// От 0 до 480px
+@media screen and (max-width: 480px) {
+    .box {
+        background-color: lime;
+        width: 100%;
+    }
+}
+
+// От 481px до 1024px
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .box {
+        background-color: orange;
+        width: 100%;
+    }
+}
+
+// От 1025px и выше
+@media screen and (min-width: 1025px) {
+    .box {
+        background-color: lightseagreen;
+        width: 1024px;
+        margin: 40px auto;
+    }
+}

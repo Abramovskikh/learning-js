@@ -1,0 +1,1 @@
+*{margin:0;padding:0;border:0;font-size:0}.box{height:100px;background-color:red}@media screen and (max-width:480px){.box{background-color:#0f0;width:100%}}@media screen and (min-width:481px) and (max-width:1024px){.box{background-color:orange;width:100%}}@media screen and (min-width:1025px){.box{background-color:#20b2aa;width:1024px;margin:40px auto}}
