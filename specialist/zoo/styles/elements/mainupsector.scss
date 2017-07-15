@@ -15,18 +15,22 @@ $wrapperWidth: $width - 20;
     box-shadow: 0 0 5px lightgray;
     border-radius: 10px;
     background-color: rgba(233, 233, 233, 0.2);
+    overflow: hidden;
+    cursor: default;
 
     h1 {
         padding-top: 10px;
         text-align: center;
         font-size: 24px;
         color: black;
+        @include noSelected();
     }
 
     p {
         padding: 10px;
         font-size: $middle-text;
         text-indent: 15px;
+        @include noSelected();
     }
 }
 
@@ -51,6 +55,12 @@ $wrapperWidth: $width - 20;
         box-shadow: 0 0 2px black;
         overflow: hidden;
         border-radius: 8px;
+
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 2px 2px 2px black;
+        }
     }
 }
 

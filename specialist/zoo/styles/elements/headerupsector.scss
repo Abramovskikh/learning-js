@@ -17,6 +17,8 @@ $h: $hHeight * 0.8;
     font-weight: bolder;
     font-size: $middle-text;
     line-height: $h * 0.29;
+    cursor: default;
+    @include noSelected();
 }
 
 #logo {

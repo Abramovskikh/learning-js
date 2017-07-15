@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 	<link rel="stylesheet" href="styles/styles.min.css">
+	<script src="scripts/uilang.js"></script>
 	<title>Мой зоопарк</title>
 </head>
 <body>
@@ -27,11 +28,34 @@
 			</div>
 			<div id="headerdownsector">
 				<nav>
-					<a href="#" class="anchor">Главная</a>
-					<a href="#" class="anchor">Птицы</a>
-					<a href="#" class="anchor">Млекопитающие</a>
-					<a href="#" class="anchor">Рептилии</a>
+					<span id="main" class="anchor">Главная</span>
+					<span id="birds" class="anchor">Птицы</span>
+					<span id="mammals" class="anchor">Млекопитающие</span>
+					<span id="reptiles" class="anchor">Рептилии</span>
 				</nav>
+				<div class="noActiveMain">
+					<ul class="listHidden">
+						<li><a href="#">О зоопарке</a></li>
+					</ul>
+				</div>
+				<div class="noActiveB">
+					<ul class="listHidden">
+						<li><a href="animals/birds/parrot.html">Попугай</a></li>
+						<li><a href="animals/birds/pinguin.html">Пингвин</a></li>
+					</ul>
+				</div>
+				<div class="noActiveM">
+					<ul class="listHidden">
+						<li><a href="animals/mammals/dog.html">Собака</a></li>
+						<li><a href="animals/mammals/cat.html">Кошка</a></li>
+					</ul>
+				</div>
+				<div class="noActiveR">
+					<ul class="listHidden">
+						<li><a href="animals/reptiles/snake.html">Змея</a></li>
+						<li><a href="animals/reptiles/turtle.html">Черепаха</a></li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -47,12 +71,12 @@
 						Microsoft Visual Code, KOALA и Adobe Photoshope CC.
 					</p>
 					<div id="arrayBlock">
-						<div class="pic parrot-min"></div>
-						<div class="pic pinguin-min"></div>
-						<div class="pic snake-min"></div>
-						<div class="pic turtle-min"></div>
-						<div class="pic dog-min"></div>
-						<div class="pic cat-min"></div>
+						<div class="pic parrot-min" onclick="document.location = 'animals/birds/parrot.html'"></div>
+						<div class="pic pinguin-min" onclick="document.location = 'animals/birds/pinguin.html'"></div>
+						<div class="pic snake-min" onclick="document.location = 'animals/reptiles/snake.html'"></div>
+						<div class="pic turtle-min" onclick="document.location = 'animals/reptiles/turtle.html'"></div>
+						<div class="pic dog-min" onclick="document.location = 'animals/mammals/dog.html'"></div>
+						<div class="pic cat-min" onclick="document.location = 'animals/mammals/cat.html'"></div>
 					</div>
 				</div>
 			</section>
@@ -61,5 +85,11 @@
 			</section>
 		</main>
 	</div>
+	<code>
+		clicking on "#main" toggles ".navHiddenPanelMain" on ".noActiveMain"
+		clicking on "#birds" toggles ".navHiddenPanelBirds" on ".noActiveB"
+		clicking on "#mammals" toggles ".navHiddenPanelMammals" on ".noActiveM"
+		clicking on "#reptiles" toggles ".navHiddenPanelReptiles" on ".noActiveR"
+	</code>
 </body>
 </html>

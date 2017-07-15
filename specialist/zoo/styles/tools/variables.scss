@@ -30,3 +30,27 @@ $big-text: 18px;
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+@mixin hiddenPanel($l) {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 19px;
+    left: $l;
+    background-color: #fee;
+    opacity: 1;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    z-index: 1;
+    text-align: center;
+}
+
+@mixin noSelected() {
+    &::selection {
+        background: transparent;
+    }
+}

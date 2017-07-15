@@ -9,8 +9,40 @@ $h: $hHeight * 0.2;
     line-height: $h;
 }
 
+.listHidden li a {
+    @include anchor();
+    font-weight: bold;
+    line-height: 25px;
+}
+
 .anchor {
     @include anchor();
     margin-right: $width / 13;
     margin-left: $width / 13;
+    cursor: pointer;
+
+    &::selection {
+        background-color: transparent;
+    }
+}
+
+.noActiveB, .noActiveM, .noActiveR, .noActiveMain {
+    display: none;
+}
+
+.navHiddenPanelMain {
+    @include hiddenPanel(25px);  
+    height: 26px;
+}
+
+.navHiddenPanelBirds {
+    @include hiddenPanel(167px);  
+}
+
+.navHiddenPanelMammals {
+    @include hiddenPanel(328px);  
+}
+
+.navHiddenPanelReptiles {
+    @include hiddenPanel(503px);  
 }

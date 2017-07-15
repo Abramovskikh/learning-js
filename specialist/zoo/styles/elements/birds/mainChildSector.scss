@@ -1,0 +1,73 @@
+$childWidth: $wrapperWidth;
+$childHeight: $mHeight * 0.9 - 20; 
+
+#mainWrapperChild {
+    position: relative;
+    display: block;
+    width: $childWidth;
+    height: $childHeight;
+    background-color: transparent;
+}
+
+#imageAnimalBlock, #descriptionAnimal {
+    display: inline-block;
+    vertical-align: top;
+    width: $childWidth * 0.2 - 10;
+    height: $childHeight - 20;
+    margin: 10px 0;
+    margin-left: 10px;
+
+    background-color: transparent;
+
+    & img {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        width: $childWidth * 0.2 - 10 - 20;
+        margin-left: 10px;
+        margin-top: 2px;
+        border-radius: 14px;
+    }
+}
+
+#descriptionAnimal {
+    width: $childWidth * 0.8 - 10;
+    margin-left: 0;
+    margin-right: 10px;
+    overflow: auto;
+
+    background-color: transparent;
+}
+
+// Для птиц
+.navHiddenPanelMainBird {
+    @extend .navHiddenPanelMain;
+    height: 50px;
+}
+
+.navHiddenPanelBirdsS {
+    @extend .navHiddenPanelBirds;
+    height: 26px;
+}
+
+// Для млекопитающих
+.navHiddenPanelMainMammal {
+    @extend .navHiddenPanelMain;
+    height: 50px;
+}
+
+.navHiddenPanelMammalsS {
+    @extend .navHiddenPanelMammals;
+    height: 26px;
+}
+
+// Для рептилий
+.navHiddenPanelMainReptile {
+    @extend .navHiddenPanelMain;
+    height: 50px;
+}
+
+.navHiddenPanelReptilesS {
+    @extend .navHiddenPanelReptiles;
+    height: 26px;
+}

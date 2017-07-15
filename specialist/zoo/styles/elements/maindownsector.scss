@@ -13,4 +13,7 @@ $hm: $mHeight * 0.1;
     color: white;
     font-size: $middle-text;
     text-shadow: 0 0 1px black;
+    cursor: default;
+
+    @include noSelected();
 }
