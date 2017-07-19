@@ -1,0 +1,43 @@
+body {
+    font-family: Courier New, Courier, monospace;
+}
+
+form {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+#addButton {
+    border-radius: 20px;
+    background-image: linear-gradient(to top, gray, white);
+    outline-color: transparent;
+    cursor: pointer;
+}
+
+ul#playlist {
+    position: relative;
+    width: 960px;
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+    margin: 10px auto 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul#playlist li {
+    border: 1px solid #a9a9a9;
+    padding: 10px;
+    background-image: linear-gradient(to top, #f9f9f9, #e3e3e3);
+}
+
+ul#playlist li:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+ul#playlist li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
